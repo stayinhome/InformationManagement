@@ -21,6 +21,20 @@ namespace InformationManagement
 
     }
 
+    public class SpeakContext
+    {
+        /// <summary>
+        /// 主题
+        /// </summary>
+        public List<string> Subject = new List<string>();
+
+        /// <summary>
+        /// 上下文关键词
+        /// </summary>
+        public List<string> KeyWords = new List<string>();
+        
+    }
+
 
     public enum AtmosphereType
     {
