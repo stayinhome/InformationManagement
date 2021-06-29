@@ -19,10 +19,6 @@ namespace InformationManagement
         /// </summary>
         public AtmosphereType AtmosphereType = AtmosphereType.None;
 
-    }
-
-    public class SpeakContext
-    {
         /// <summary>
         /// 主题
         /// </summary>
@@ -32,8 +28,23 @@ namespace InformationManagement
         /// 上下文关键词
         /// </summary>
         public List<string> KeyWords = new List<string>();
-        
+
     }
+
+    public class SpeakResult
+    {
+        /// <summary>
+        /// 目标对象
+        /// </summary>
+        public List<string> Target = new List<string>();
+
+        /// <summary>
+        /// 内容
+        /// </summary>
+        public List<string> Context = new List<string>();
+
+    }
+
 
 
     public enum AtmosphereType

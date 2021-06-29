@@ -10,7 +10,7 @@ namespace InformationManagement
     public interface ISpeakInterface
     {
 
-        string Speak(SpeakEnvironment environment ,SpeakContext speakContext);
+        SpeakResult Speak(SpeakEnvironment environment);
 
 
     }
