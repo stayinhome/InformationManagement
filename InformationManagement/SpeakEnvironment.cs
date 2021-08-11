@@ -22,12 +22,8 @@ namespace InformationManagement
         /// <summary>
         /// 主题
         /// </summary>
-        public List<string> Subject = new List<string>();
+        public List<SpeakContext> Context = new List<SpeakContext>();
 
-        /// <summary>
-        /// 上下文关键词
-        /// </summary>
-        public List<string> KeyWords = new List<string>();
 
     }
 
@@ -45,7 +41,56 @@ namespace InformationManagement
 
     }
 
+    public class SpeakContext
+    {
+        /// <summary>
+        /// 说话人ID
+        /// </summary>
+        public int SperkerID = 0;
 
+        /// <summary>
+        /// 主题左
+        /// </summary>
+        public List<string> SubjectListLeft = new List<string>();
+
+        /// <summary>
+        /// 主题右
+        /// </summary>
+        public string SubjectListRight = "";
+
+        /// <summary>
+        /// 主题逻辑
+        /// </summary>
+        public SubjectLogic logic = SubjectLogic.Equal;
+    }
+
+    public enum SubjectLogic
+    {
+        /// <summary>
+        /// 相等
+        /// </summary>
+        Equal = 0,
+
+        /// <summary>
+        /// 包含
+        /// </summary>
+        Include = 1,
+
+        /// <summary>
+        /// 因果
+        /// </summary>
+        Cause = 2,
+    }
+
+    /// <summary>
+    /// 目的
+    /// </summary>
+    public enum SpeakPurpose
+    {
+
+
+
+    }
 
     public enum AtmosphereType
     {
